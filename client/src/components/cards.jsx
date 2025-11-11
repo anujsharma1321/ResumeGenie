@@ -6,7 +6,7 @@ const Cards = ({ index, name, ats, id, email }) => {
   const [showDetails, setShowDetails] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [emailSent, setEmailSent] = useState(false);
-  
+  const [error, setError] = useState(null);
   const getScoreTextColor = (score) => {
     if (score > 80) return "text-green-700";
     if (score > 40) return "text-yellow-700";
